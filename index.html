@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arsalan">
+    <meta name="description" content="This is a basic Tic Tac Toe Game">
+
+    <title>Tic Tac Toe Game</title>
+    <link href='https://fonts.googleapis.com/css?family=Comic Neue' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="img/favicon.png" type="x-icon/image">
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1>Tic Tac Toe</h1>
+        </section>
+    </header>
+    <main>
+        <section class="entry-form" style="display: flex;">
+            <form action="">
+                <fieldset>
+                    <p>
+                        <label for="player-1">Player 1: </label>
+                        <input type="text" name="player-1" id="player-1" placeholder="Enter Name" required>
+                    </p>
+                    <p>
+                        <label for="player-2">Player 2: </label>
+                        <input type="text" name="player-2" id="player-2" placeholder="Enter Name" required>
+                    </p>
+                    <button type="submit" class="start">Start Game</button>
+                </fieldset>
+            </form>
+            <p class="name-error"></p>
+        </section>
+        <section class="game" style="display: none;">
+            <section>
+                <p class="turn-notification"></p>
+            </section>
+            <section class="boxes">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col" id="col1"></th>
+                            <th scope="col" id="col2"></th>
+                            <th scope="col" id="col3"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="row1">
+                            <td id="box1" onclick="changeValue(id)"></td>
+                            <td id="box2" onclick="changeValue(id)"></td>
+                            <td id="box3" onclick="changeValue(id)"></td>
+                        </tr>
+                        <tr id="row2">
+                            <td id="box4" onclick="changeValue(id)"></td>
+                            <td id="box5" onclick="changeValue(id)"></td>
+                            <td id="box6" onclick="changeValue(id)"></td>
+                        </tr>
+                        <tr id="row3">
+                            <td id="box7" onclick="changeValue(id)"></td>
+                            <td id="box8" onclick="changeValue(id)"></td>
+                            <td id="box9" onclick="changeValue(id)"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <p class="error-notification"></p>
+            </section>
+            <section style ="display: none;" class="buttons">
+                <button type="submit" class="reset" onclick="window.location.reload()">Restart Game</button>
+                <button type="submit" class="clear" onclick="rematch()">Clear Board</button>
+            </section>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

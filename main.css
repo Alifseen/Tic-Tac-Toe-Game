@@ -1,0 +1,91 @@
+html{
+    background-color: beige;
+}
+
+fieldset, table{
+    background-color: cornflowerblue;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+fieldset p{
+    width: 100%;
+    font-size: 1.2em;
+    font-family: 'Montserrat';
+    color: beige;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5em;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+input {
+    border: transparent;
+    color: rgb(0, 0, 0);
+    background-color: beige;
+    text-align: center;
+    font-size: 0.7em;
+    cursor:text;
+    margin: auto;
+}
+
+table, td{
+    border: solid 1px black;
+    border-collapse: collapse;
+    padding: 2px;
+    text-align: center;
+}
+
+thead{
+    display: none;
+}
+
+/*Fixes the size of cells. These cells do not change the size as long as they can hold the content inside them*/
+td, td:hover{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-family: 'Comic Neue';
+    font-size: 2em;
+    font-weight: bold;
+}
+
+td:hover{
+    background-color:dodgerblue;
+}
+
+.entry-form, .start, .game{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.start, .reset, .clear{
+    cursor: pointer;
+    font-size: 1em;
+    font-weight:600;
+}
+
+.reset, .clear{
+    margin: 10px 10px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-error, .turn-notification, .error-notification{
+    font-size: 1.5em;
+    font-family: Helvetica;
+    color: red;
+}
